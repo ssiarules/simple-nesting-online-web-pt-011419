@@ -1,4 +1,4 @@
-
+require 'pry'
 def hopper
 	programmer_hash = 
  		{
@@ -15,8 +15,11 @@ def hopper
           :languages => ["C"]
         }
      }
+value = programmer_hash[:grace_hopper]
 
+value 
 
+#binding.pry 
 end
 
 def alan_kay_is_known_for
@@ -37,6 +40,10 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
+    return_value = programmer_hash[:alan_kay][:known_for]
+    
+    return_value
+    
 end
 
 def dennis_ritchies_language
@@ -55,6 +62,10 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
+     
+     return_value_languages = programmer_hash[:dennis_ritchie][:languages].join 
+     
+   return_value_languages
 end
 
 def adding_matz
@@ -65,8 +76,8 @@ def adding_matz
 # }
 
 	programmer_hash = 
- 		{
-        :grace_hopper => {
+ 		{   :yukihiro_matsumoto =>{},
+          :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
         },
@@ -101,8 +112,10 @@ def changing_alan
      }
      #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
      alans_new_info = "GUI"
+    changing_alan[:alan_kay][:known_for] = GUI
      
      
+     #h[key] = value
 end
 
 def adding_to_dennis
