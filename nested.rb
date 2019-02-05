@@ -137,7 +137,7 @@ def adding_to_dennis
      }
      new_language = "Assembly"
 
-programmer_hash[:dennis_ritchie][:languages].push (new_language)
+programmer_hash[:dennis_ritchie][:languages].push(new_language)
 
 programmer_hash
 
